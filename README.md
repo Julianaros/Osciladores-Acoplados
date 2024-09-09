@@ -49,23 +49,23 @@ En el primer modo, el modo lento, las masas se mueven en fase y no hay extensió
 El movimiento general es una combinación lineal de los modos normales:
 
 
-\[
+$$
 x = (X_0 +y_0 /2) \cos(\omega_1 t + \alpha_1) + (x_0 -y_0 /2) \cos(\omega_2 t + \alpha_2)
-\]
+$$
 
-\[
+$$
 y = (X_0 +y_0 /2) \cos(\omega_1 t + \alpha_1) - (x_0 -y_0 /2) \cos(\omega_2 t + \alpha_2)
-\]
+$$
 
 
-\[
+$$
 x' = -(X_0 +y_0 /2) \sin(\omega_1 t + \alpha_1) - (x_0 -y_0 /2) \sin(\omega_2 t + \alpha_2)
-\]
+$$
 
 
-\[
+$$
 y' = -(X_0 +y_0 /2) \cos(\omega_1 t + \alpha_1) + (x_0 -y_0 /2) \cos(\omega_2 t + \alpha_2)
-\]
+$$
 
 
 
