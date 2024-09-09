@@ -14,5 +14,3 @@ def analitica(t):
     y = ((x0 + y0)/2)*np.cos(w1*t) - ((x0 - y0)/2)*np.cos(w2*t)
 
     return x,y
-
-x, y = analitica(1)
