@@ -4,7 +4,7 @@ La ecuación diferencial ordinaria (EDO) para dos osciladores acoplados describe
 
 En términos generales, si consideramos dos osciladores acoplados con posiciones $$x_1$$ y $$x_2$$, la EDO que descibe su movimiento suele tener la forma: 
 
-x_1 x''_1= -k_1 x_1 - k_{12} (x_1 - x_2)m_2 x''_2 = -k_2 x_2 - k_{21} (x_2 - x_1)
+$$x_1 x''_1= -k_1 x_1 - k_{12} (x_1 - x_2)m_2 x''_2 = -k_2 x_2 - k_{21} (x_2 - x_1)$$
 
 donde: 
 
@@ -30,16 +30,57 @@ $$my''+ (k_1+k_2)y-k_2x=0$$
 
 Al poner a cero el determinante de los coeficientes, encontramos para las frecuencias de los modos normales
 
-$$\omega ²= k_1/m  y    \omega ² k_1 +2k_2 /m$$ ,
+$$\omega ²= k_1/m $$
+
+$$\omega ² k_1 +2k_2 /m$$ ,
 
 correspondiente al desplazamiento: 
 
 
-$$x/y=1 y  x/y =-1$$
+$$x/y=1$$
+y  
+$$x/y =-1$$
+
 
 
 
 En el primer modo, el modo lento, las masas se mueven en fase y no hay extensión ni compresión del resorte de acoplamiento. En el segundo modo, el modo rápido, las masas se mueven en antífase y la compresión o extensión del resorte de acoplamiento es el doble de la extensión o compresión de los resortes exteriores.
+
+El movimiento general es una combinación lineal de los modos normales:
+
+
+\[
+x = (X_0 +y_0 /2) \cos(\omega_1 t + \alpha_1) + (x_0 -y_0 /2) \cos(\omega_2 t + \alpha_2)
+\]
+
+\[
+y = (X_0 +y_0 /2) \cos(\omega_1 t + \alpha_1) - (x_0 -y_0 /2) \cos(\omega_2 t + \alpha_2)
+\]
+
+
+\[
+x' = -(X_0 +y_0 /2) \sin(\omega_1 t + \alpha_1) - (x_0 -y_0 /2) \sin(\omega_2 t + \alpha_2)
+\]
+
+
+\[
+y' = -(X_0 +y_0 /2) \cos(\omega_1 t + \alpha_1) + (x_0 -y_0 /2) \cos(\omega_2 t + \alpha_2)
+\]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
