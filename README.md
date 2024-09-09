@@ -4,7 +4,9 @@ La ecuación diferencial ordinaria (EDO) para dos osciladores acoplados describe
 
 En términos generales, si consideramos dos osciladores acoplados con posiciones $$x_1$$ y $$x_2$$, la EDO que descibe su movimiento suele tener la forma: 
 
-$$x_1 x''_1= -k_1 x_1 - k_{12} (x_1 - x_2)m_2 x''_2 = -k_2 x_2 - k_{21} (x_2 - x_1)$$
+$$
+x_1 x''_1= -k_1 x_1 - k_{12} (x_1 - x_2)m_2 x''_2 = -k_2 x_2 - k_{21} (x_2 - x_1)
+$$
 
 donde: 
 
@@ -50,22 +52,13 @@ El movimiento general es una combinación lineal de los modos normales:
 
 
 $$
-x = (X_0 +y_0 /2) \cos(\omega_1 t + \alpha_1) + (x_0 -y_0 /2) \cos(\omega_2 t + \alpha_2)
+x(t) = (x_0 +y_0 /2) \cos(\omega_1 t + \alpha_1) + (x_0 -y_0 /2) \cos(\omega_2 t + \alpha_2)
 $$
 
 $$
-y = (X_0 +y_0 /2) \cos(\omega_1 t + \alpha_1) - (x_0 -y_0 /2) \cos(\omega_2 t + \alpha_2)
+y(t) = (x_0 +y_0 /2) \cos(\omega_1 t + \alpha_1) - (x_0 -y_0 /2) \cos(\omega_2 t + \alpha_2)
 $$
 
-
-$$
-x' = -(X_0 +y_0 /2) \sin(\omega_1 t + \alpha_1) - (x_0 -y_0 /2) \sin(\omega_2 t + \alpha_2)
-$$
-
-
-$$
-y' = -(X_0 +y_0 /2) \cos(\omega_1 t + \alpha_1) + (x_0 -y_0 /2) \cos(\omega_2 t + \alpha_2)
-$$
 
 
 
