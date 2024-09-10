@@ -1,22 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Función para obtener las constantes y condiciones iniciales
-def ingresar_parametros():
-    # Constantes del problema
-    k1 = float(input("Ingrese la constante del resorte 1 (k1): "))
-    k2 = float(input("Ingrese la constante del resorte 2 (k2): "))
-    m = float(input("Ingrese la masa (m): "))
-
-    # Condiciones iniciales
-    x1_0 = float(input("Ingrese la posición inicial de la masa 1 (x1_0): "))
-    x2_0 = float(input("Ingrese la posición inicial de la masa 2 (x2_0): "))
-    vx1_0 = float(input("Ingrese la velocidad inicial de la masa 1 (vx1_0): "))
-    vx2_0 = float(input("Ingrese la velocidad inicial de la masa 2 (vx2_0): "))
-
-    # Retornar todos los parámetros
-    return k1, k2, m, x1_0, x2_0, vx1_0, vx2_0
-
 # Funciones para el sistema acoplado
 def f1(x1, x2, v1, v2):
     return v1
@@ -31,7 +15,26 @@ def f4(x1, x2, v1, v2, k1, k2, m):
     return -(k1 + k2) * x2 / m + k2 * x1 / m
 
 # Función que ejecuta ambos métodos y devuelve una dupla
-def numerica(t, x1_0, x2_0, vx1_0, vx2_0, k1, k2, m):
+def numerica(t):
+    # Función para obtener las constantes y condiciones iniciales
+    def ingresar_parametros():
+        # Constantes del problema
+        k1 = float(input("Ingrese la constante del resorte 1 (k1): "))
+        k2 = float(input("Ingrese la constante del resorte 2 (k2): "))
+        m = float(input("Ingrese la masa (m): "))
+
+        # Condiciones iniciales
+        x1_0 = float(input("Ingrese la posición inicial de la masa 1 (x1_0): "))
+        x2_0 = float(input("Ingrese la posición inicial de la masa 2 (x2_0): "))
+        vx1_0 = float(input("Ingrese la velocidad inicial de la masa 1 (vx1_0): "))
+        vx2_0 = float(input("Ingrese la velocidad inicial de la masa 2 (vx2_0): "))
+
+        # Retornar todos los parámetros
+        return k1, k2, m, x1_0, x2_0, vx1_0, vx2_0
+
+    # Obtener parámetros
+    k1, k2, m, x1_0, x2_0, vx1_0, vx2_0 = ingresar_parametros()
+
     dt = t[1] - t[0]  # Paso de tiempo, asumimos que t es uniforme
     
     # Inicialización de arrays
@@ -88,14 +91,11 @@ def numerica(t, x1_0, x2_0, vx1_0, vx2_0, k1, k2, m):
     return (x1_euler, x2_euler), (x1_rk4, x2_rk4)
 
 
-# Ejecución del programa
-k1, k2, m, x1_0, x2_0, vx1_0, vx2_0 = ingresar_parametros()
-
 # Tiempo de simulación
 t = np.linspace(0, 10, 1000)
 
 # Resultados numéricos
-euler_result, rk4_result = numerica(t, x1_0, x2_0, vx1_0, vx2_0, k1, k2, m)
+euler_result, rk4_result = numerica(t)
 
 # Gráficas de los resultados
 plt.plot(t, euler_result[0], label='x1 (Euler)')
