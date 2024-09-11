@@ -97,12 +97,3 @@ t = np.linspace(0, 10, 1000)
 # Resultados numéricos
 euler_result, rk4_result = numerica(t)
 
-# Gráficas de los resultados
-plt.plot(t, euler_result[0], label='x1 (Euler)')
-plt.plot(t, euler_result[1], label='x2 (Euler)')
-plt.plot(t, rk4_result[0], label='x1 (RK4)')
-plt.plot(t, rk4_result[1], label='x2 (RK4)')
-plt.xlabel('Tiempo')
-plt.ylabel('Posición')
-plt.legend()
-plt.show()
