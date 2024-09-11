@@ -1,6 +1,6 @@
 from librerias import *
 from analitica import analitica  
-from SolucionNumerica import numerica  
+from Final_Final_Final_ESTE_SI import numerica  
 
 # Tiempo
 t = np.linspace(0,20,400)
