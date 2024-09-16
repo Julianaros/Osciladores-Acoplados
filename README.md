@@ -79,3 +79,7 @@ $$
 
 
 Solución analítica: https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Classical_Mechanics_(Tatum)/17%3A_Vibrating_Systems/17.07%3A_Two_Masses%2C_Three_Springs%2C_Two_brick_Walls
+
+# Graficador
+
+Con ayuda del archivo resultados.py se pueden realizar las gráficas correspondientes a las soluciones del oscilador acoplado. Se importan las librerías necesarias y las respectivas funciones de los archivos que se encargaron de la solución teórica y las soluciones numéricas,se define el paso del tiempo y luego se genera la visualización de tres gráficas: Solución analítica, Método de Euler y Método Runge-Kutta 4 en una sola imagen.
