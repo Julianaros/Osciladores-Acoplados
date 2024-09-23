@@ -174,7 +174,7 @@ plt.plot(t, euler_result[0], label="Masa 1 - Euler")
 plt.plot(t, rk4_result[0], label="Masa 1 - RK4")
 plt.legend()
 plt.show()
-
+```
 
 # Graficador
 
